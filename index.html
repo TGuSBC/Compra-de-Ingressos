@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Compra de Ingresso</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Compre seu <span>ingresso</span></h1>
+
+    <!-- FORMULÁRIO -->
+    <div class="formulario">
+
+      <div class="campo">
+        <label for="tipo-ingresso">Escolha o tipo</label>
+        <select id="tipo-ingresso">
+          <option value="pista">Pista</option>
+          <option value="superior">Cadeira superior</option>
+          <option value="inferior">Cadeira inferior</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="quantidade">Qtde.</label>
+        <input type="number" id="quantidade" value="1" min="1">
+      </div>
+
+      <button id="btn-comprar">Comprar</button>
+
+    </div>
+
+    <!-- LINHA DECORATIVA -->
+    <div class="linha"></div>
+
+    <!-- INFORMAÇÕES -->
+    <div class="info">
+
+      <div class="disponivel">
+        <h2>Quantidade disponível</h2>
+
+        <ul>
+          <li>
+            Pista
+            <span id="qtd-pista">100</span>
+          </li>
+          <li>
+            Cadeira superior
+            <span id="qtd-superior">200</span>
+          </li>
+          <li>
+            Cadeira inferior
+            <span id="qtd-inferior">400</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- VISUAL DO INGRESSO -->
+      <div class="ingresso">
+        <div class="tracejado"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS VEM AQUI DEPOIS -->
+  <!-- <script src="script.js"></script> -->
+
+</body>
+</html>

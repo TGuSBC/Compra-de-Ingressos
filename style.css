@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #020024, #0b1d2b);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 800px;
+  padding: 40px;
+  border: 1px solid #1effbc;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+h1 span {
+  color: #1e90ff;
+}
+
+.formulario {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+select,
+input {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+button {
+  padding: 10px 25px;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.linha {
+  margin: 30px 0;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    #1effbc,
+    #1effbc 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info ul {
+  list-style: none;
+}
+
+.info li {
+  margin-top: 8px;
+}
+
+.info span {
+  color: #1effbc;
+  margin-left: 10px;
+}
+
+.ingresso {
+  width: 140px;
+  height: 80px;
+  background-color: #2b6cff;
+  border-radius: 12px;
+  position: relative;
+}
+
+.tracejado {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  border-left: 2px dashed #0b1d2b;
+}
